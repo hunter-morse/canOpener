@@ -11,7 +11,8 @@
 class StepperDriver
 {
     public:
-        StepperDriver(uint8_t new_id, uint8_t stepsPerRev, uint32_t pin1, uint32_t pin2, uint32_t pin3, uint32_t pin4, uint32_t enable);
+        StepperDriver(uint8_t new_id, uint8_t stepsPerRev, uint32_t pin1, uint32_t pin2, 
+                    uint32_t pin3, uint32_t pin4, uint32_t enable, uint8_t new_speed);
 
         void move(int16_t steps);
 
