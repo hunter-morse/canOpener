@@ -57,29 +57,55 @@ void StepperDriver::move(int16_t steps)
  * @brief Gets the current position of the stepper motor
  * @details The position that is returned is returned in terms of total steps, so it will need to be converted to other units
  * 
- * @return The number of steps that the motor has rotated through.
+ * @return The number of steps that the motor has rotated through.  
  * */
 int32_t StepperDriver::getPosition(void)
 {
     return curr_pos;
 }
 
+/**
+ * @brief Sets the current position of the stepper motor
+ * @details This method takes in an input argument and changes the position that will be returned when StepperDriver::getPosition()
+ *          is called. This is called in the constructor to set the position to 0.
+ * 
+ * @param new_pos The new position to be set
+ * */
 void StepperDriver::setPosition(int32_t new_pos)
 {
     curr_pos = new_pos;
 }
 
-void StepperDriver::setSpeed(uint16_t new_speed)
+/**
+ * @brief Sets the speed of the stepper motor in RPM
+ * @details This is a wrapper method for the Stepper.h setSpeed() function
+ * 
+ * @param new_speed The speed in RPM that the stepper motor will rotate at
+ * */
+void StepperDriver::setSpeed(float new_speed)
 {
-    p_Stepper->setSpeed(new_speed);
+    p_Stepper->setSpeed((long) new_speed);
     speed = new_speed;
 }
 
-uint16_t StepperDriver::getSpeed(void)
+
+/**
+ * @brief Returns the speed of the stepper motor in RPM
+ * @details
+ * 
+ * @return The speed of the motor in RPM
+ * */
+float StepperDriver::getSpeed(void)
 {
     return speed;
 }
 
+/**
+ * @brief Returns the ID of the StepperDriver object
+ * @details
+ * 
+ * @return The ID of the StepperDriver object
+ * */
 uint8_t StepperDriver::getID(void)
 {
     return id;

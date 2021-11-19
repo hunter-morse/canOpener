@@ -31,9 +31,9 @@ class StepperDriver
 
         void setPosition(int32_t new_pos);
 
-        void setSpeed(uint16_t new_speed);
+        void setSpeed(float new_speed);
 
-        uint16_t getSpeed(void);
+        float getSpeed(void);
 
         uint8_t getID(void);
 
@@ -52,7 +52,7 @@ class StepperDriver
 
         uint32_t pin_enable;
 
-        uint16_t speed;
+        float speed;
 
         Stepper* p_Stepper; 
 
