@@ -101,3 +101,18 @@ void MotorDriver::brake(void)
     digitalWrite(pinEN, HIGH);
     direction = 0;
 }
+
+float MotorDriver::getPWM(void)
+{
+    return PWM;
+}
+
+uint8_t MotorDriver::getID(void)
+{
+    return id;
+}
+
+int8_t MotorDriver::getDirection(void)
+{
+    return direction;
+}
