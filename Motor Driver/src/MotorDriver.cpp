@@ -6,7 +6,7 @@
 #include <Arduino.h>
 
 MotorDriver::MotorDriver(uint8_t new_id, uint32_t pos, uint32_t neg, uint32_t enable, uint8_t PWM_bound, 
-                        uint16_t delay)
+                        uint16_t b_delay)
 {
     //Set class variables to parameters
     id = new_id;
@@ -19,7 +19,7 @@ MotorDriver::MotorDriver(uint8_t new_id, uint32_t pos, uint32_t neg, uint32_t en
 
     PWM_max = PWM_bound;
     PWM_min = -1 * PWM_bound;
-    brake_delay = delay;
+    brake_delay = b_delay;
 
     //Set the motor and enable pins to OUTPUT
     pinMode(pinA, OUTPUT);
