@@ -8,10 +8,12 @@
  * @date Nov 27, 2021
  * */
 
+#include "STM32FreeRTOS.h"
+#include <Arduino.h>
+#include "PrintStream.h"
 #include "taskshare.h"
 #include "TempSensor.h"
 #include "shares.h"
-#include "STM32FreeRTOS.h"
 #include "taskTemp.h"
 
 Share<float> currentTemp("Current Temperature");

@@ -5,10 +5,11 @@
  * @author Ben Bons
  * @date Nov 27, 2021
  * */
+
+#include "STM32FreeRTOS.h"
 #include <Arduino.h>
 #include "PrintStream.h"
 #include "shares.h"
-#include "STM32FreeRTOS.h"
 #include "taskWriteToDisplay.h"
 
 void taskWriteToDisplay(void* p_params)
