@@ -19,6 +19,12 @@ class MotorDriver
 
         void brake(void);
 
+        float getPWM(void);
+
+        uint8_t getID(void);
+
+        int8_t getDirection(void);
+
 
     protected:
         uint8_t id;
