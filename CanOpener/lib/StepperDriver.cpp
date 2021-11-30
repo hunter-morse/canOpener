@@ -1,3 +1,11 @@
+/**
+ * @file StepperDriver.cpp
+ * @brief Contains the functionality for th StepperDriver class
+ * 
+ * @author Ben Bons
+ * @date Nov 30, 2021
+ * */
+
 #include <Arduino.h>
 #include "StepperDriver.h"
 #include <Stepper.h>
