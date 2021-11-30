@@ -1,5 +1,9 @@
 /**
- * @file
+ * @file MotorDriver.h
+ * @brief Header file which contains the MotorDriver Class
+ * 
+ * @author Ben Bons
+ * @date Nov 29, 2021
  * */
 
 #ifndef MotorDriver_h
@@ -8,6 +12,13 @@
 #include <Arduino.h>
 #include <math.h>
 
+
+/**
+ * @brief A class which controls a servo motor
+ * @details This class allows for PWM control of a servo motor. The motor must be a simple 2-wire servo motor.
+ *          The class includes protections against quick reversal of the motor with a (blocking) brake delay.
+ *          The class will also allow for a maximum PWM to be used.
+ * */
 class MotorDriver
 {
     public:
