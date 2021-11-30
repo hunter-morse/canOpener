@@ -39,7 +39,7 @@ class MotorDriverStepper{
         uint8_t getSpeed();                 // 
 
 
-}
+};
 
 
 

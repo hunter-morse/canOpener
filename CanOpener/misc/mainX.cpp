@@ -48,17 +48,72 @@ void setup (void)
     delay (1000);
     
     // Set pins to communicate with motor
+    int DC1a    = PB4;
+    int DC1b    = PB5;
+    int DCEN1   = PA13;
+
     int DC2a    = PA10;
     int DC2b    = PA11;
     int DCEN2   = PA14;
-    
+
+    int DC3a    = PA5;
+    int DC3b    = PB3;
+    int DCEN3   = PC13;
+
+    int DC4a    = PB10;
+    int DC4b    = PB11;
+    int DCEN4   = PC14;
+
+    int STEP1a  = PB4;
+    int STEP1b  = PB5;
+    int STEP1c  = PB0;
+    int STEP1d  = PB1;
+    int STEPEN1 = PC15;
+
+    pinMode(DC1a, OUTPUT);
+    pinMode(DC1b, OUTPUT);
+    pinMode(DCEN1, OUTPUT);
+
     pinMode(DC2a, OUTPUT);
     pinMode(DC2b, OUTPUT);
     pinMode(DCEN2, OUTPUT);
+    
+    pinMode(DC3a, OUTPUT);
+    pinMode(DC3b, OUTPUT);
+    pinMode(DCEN3, OUTPUT);
+
+    pinMode(DC4a, OUTPUT);
+    pinMode(DC4b, OUTPUT);
+    pinMode(DCEN4, OUTPUT);
+
+    pinMode(STEP1a, OUTPUT);
+    pinMode(STEP1b, OUTPUT);
+    pinMode(STEP1c, OUTPUT);
+    pinMode(STEP1d, OUTPUT);
+    pinMode(STEPEN1, OUTPUT);
+
+    digitalWrite(DC1a, HIGH);
+    digitalWrite(DC1b, LOW);
+    digitalWrite(DCEN1, HIGH);
 
     digitalWrite(DC2a, HIGH);
     digitalWrite(DC2b, LOW);
     digitalWrite(DCEN2, HIGH);
+
+    digitalWrite(DC3a, HIGH);
+    digitalWrite(DC3b, LOW);
+    digitalWrite(DCEN3, HIGH);
+
+    digitalWrite(DC4a, HIGH);
+    digitalWrite(DC4b, LOW);
+    digitalWrite(DCEN4, HIGH);
+
+    digitalWrite(STEP1a, HIGH);
+    digitalWrite(STEP1b, LOW);
+    digitalWrite(STEP1c, HIGH);
+    digitalWrite(STEP1d, LOW);
+    digitalWrite(STEPEN1, HIGH);
+
 
     Serial << "\033[2JTimer/Counter Test in Encoder Mode" << endl;
 
