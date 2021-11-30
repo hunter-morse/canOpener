@@ -6,6 +6,8 @@
 #ifndef SHARES_H
 #define SHARES_H
 
+#include <Arduino.h>
+#include <STM32FreeRTOS.h>
 #include "taskshare.h"
 #include "taskqueue.h"
 
