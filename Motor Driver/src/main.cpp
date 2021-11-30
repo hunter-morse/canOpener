@@ -2,7 +2,7 @@
 #include "MotorDriver.h"
 #include "StepperDriver.h"
 
-const bool TESTING_SERVO = false;
+const bool TESTING_SERVO = true;
 
 const uint32_t pin_dc_pos = PA8;
 const uint32_t pin_dc_neg = PA9;
