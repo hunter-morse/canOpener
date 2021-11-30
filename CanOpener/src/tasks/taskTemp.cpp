@@ -12,7 +12,7 @@
 #include <Arduino.h>
 #include "PrintStream.h"
 #include "taskshare.h"
-#include "TempSensor.h"
+#include "../lib/TempSensor.h"
 #include "shares.h"
 #include "taskTemp.h"
 
