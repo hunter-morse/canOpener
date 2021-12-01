@@ -8,7 +8,6 @@
 #include "shares.h"
 
 Share<float> currentTemp("Current Temperature");
-Share<float> currentTemp;
 Share<bool> canDetected;
 Share<bool> canTopDetected;
 Share<bool> canTabDetected;

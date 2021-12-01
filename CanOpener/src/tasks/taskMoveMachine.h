@@ -1,5 +1,5 @@
-#ifndef TASK_LIMIT_SWITCH_H
-#define TASK_LIMIT_SWITCH_H
+#ifndef TASK_MOVE_MACHINE_H
+#define TASK_MOVE_MACHINE_H
 
 #include "STM32FreeRTOS.h"
 #include <Arduino.h>
@@ -9,6 +9,6 @@
 #include "../shares.h"
 #include "../pins.h"
 
-void taskCheckLimitSwitches(void *p_params);
+void taskMoveMachine(void *p_params);
 
 #endif
