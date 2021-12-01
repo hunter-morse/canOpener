@@ -33,4 +33,10 @@
 #define INLIM2  PC5
 #define INLIM3  PC4
 
+// Encoders
+#define ENC1a   PB6
+#define ENC1b   PB7
+#define ENC2a   PA0
+#define ENC2b   PA1
+
 #endif
