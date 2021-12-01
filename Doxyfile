@@ -845,7 +845,8 @@ WARN_LOGFILE           =
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  =  \
-                         ./CanOpener/lib \
+                         ./CanOpener/lib/sensorLib \
+                         ./CanOpener/lib/motorDriverLib \
                          ./CanOpener/src \
                          ./CanOpener/src/tasks
 

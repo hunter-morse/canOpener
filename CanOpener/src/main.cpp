@@ -16,7 +16,8 @@ Share<float> currentTemp("Current Temperature");
 Share<bool> canDetected("Can Detected");
 Share<bool> canTopDetected("Can Top");
 Share<bool> canTabDetected("Can Tab");
-Share<int32_t> enc1("Encoder 1");
+Share<int64_t> enc1("Encoder 1");
+Share<int64_t> enc2("Encoder 2");
 
 void setup(){
     xTaskCreate(taskCheckLimitSwitches, 
@@ -38,6 +39,12 @@ void setup(){
                 2,
                 NULL);
     xTaskCreate(taskWriteToDisplay,
+                "Display",
+                2048,
+                NULL,
+                1,
+                NULL);
+    xTaskCreate(taskEncoder,
                 "Display",
                 2048,
                 NULL,
