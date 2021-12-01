@@ -16,5 +16,6 @@ extern Share<float> currentTemp;
 extern Share<bool> canDetected;
 extern Share<bool> canTopDetected;
 extern Share<bool> canTabDetected;
+extern Share<int32_t> enc1;
 
 #endif

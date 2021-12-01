@@ -10,11 +10,13 @@
 #include "tasks/taskMoveMachine.h"
 #include "tasks/taskTemp.h"
 #include "tasks/taskWriteToDisplay.h"
+#include "tasks/taskEncoder.h"
 
 Share<float> currentTemp("Current Temperature");
 Share<bool> canDetected("Can Detected");
 Share<bool> canTopDetected("Can Top");
 Share<bool> canTabDetected("Can Tab");
+Share<int32_t> enc1("Encoder 1");
 
 void setup(){
     xTaskCreate(taskCheckLimitSwitches, 
