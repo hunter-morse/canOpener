@@ -73,5 +73,6 @@ void taskMoveMachine(void *p_params){
                 state = 0;
             }
         }
+        vTaskDelayUntil(&xLastWakeTime, 10);
     }
 }
