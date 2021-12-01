@@ -23,7 +23,7 @@
  * @param PWM_bound The PWM value, from 0 to 100, that is the maximum PWM value that can be written to either the positive or negative pin
  * @param b_delay The delay in ms, that the motor will break before switching the rotation direction of the motor - delay is blocking
  * */
-MotorDriver::MotorDriver(uint8_t new_id, uint32_t pos, uint32_t neg, uint32_t enable, uint8_t PWM_bound, 
+MotorDriver::MotorDriver(uint8_t new_id, uint8_t pos, uint8_t neg, uint8_t enable, uint8_t PWM_bound, 
                         uint16_t b_delay)
 {
     //Set class variables to parameters

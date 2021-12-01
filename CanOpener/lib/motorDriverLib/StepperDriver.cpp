@@ -26,8 +26,8 @@
  * @param enable The pin that is connected to the enable pin of the motor driver.
  * @param new_speed The speed in RPM that you want the stepper motor to spin at.
  * */
-StepperDriver::StepperDriver(uint8_t new_id, uint8_t stepsPerRev, uint32_t pin1, uint32_t pin2, 
-                            uint32_t pin3, uint32_t pin4, uint32_t enable, uint8_t new_speed)
+StepperDriver::StepperDriver(uint8_t new_id, uint8_t stepsPerRev, uint8_t pin1, uint8_t pin2, 
+                            uint8_t pin3, uint8_t pin4, uint8_t enable, uint8_t new_speed)
 {
     id = new_id;
     pin_A = pin1;

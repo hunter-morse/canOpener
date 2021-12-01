@@ -5,7 +5,8 @@
 #include <Arduino.h>
 #include "PrintStream.h"
 #include "taskshare.h"
-#include "../lib/sensorLib/limitSwitch.h"
+#include "../lib/motorDriverLib/MotorDriver.h"
+#include "../lib/motorDriverLib/StepperDriver.h"
 #include "../shares.h"
 #include "../pins.h"
 
