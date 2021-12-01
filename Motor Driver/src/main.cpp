@@ -26,7 +26,7 @@ void setup() {
   {
     delay(2000);
     p_stepper = new StepperDriver(1, 200, pin_step_1, pin_step_2, 
-                                  pin_step_3, pin_step_4, pin_step_enable, 10);
+                                  pin_step_3, pin_step_4, pin_step_enable, 75);
   }
 }
 
@@ -54,24 +54,7 @@ void loop() {
   }
   else
   {
-    delay(500);
-    p_stepper->move(20);
-    Serial.print("Pos: ");
-    Serial.println(p_stepper->getPosition());
-    delay(500);
-    p_stepper->move(25);
-    Serial.print("Pos: ");
-    Serial.println(p_stepper->getPosition());
-    Serial.print("Speed: ");
-    Serial.println(p_stepper->getSpeed());
-    delay(500);
-    p_stepper->setSpeed(20);
-    p_stepper->move(-60);
-    Serial.print("Pos: ");
-    Serial.println(p_stepper->getPosition());
-    Serial.print("Speed: ");
-    Serial.println(p_stepper->getSpeed());
-    p_stepper->setPosition(0);
-    p_stepper->setSpeed(10);
+    delay(1000);
+    p_stepper->move(200);
   }
 }

@@ -1,7 +1,6 @@
 /**
- * @file
- * @brief
- * @details
+ * @file TempSensor.h
+ * @brief Header file for the TempSensor Class
  * 
  * @author Benjamin Bons
  * @date Nov 15, 2021
@@ -16,6 +15,12 @@
 
 
 //Defines a Temperature sensor object, for reading temperatures off the MCP9808 Temperature sensor
+/**
+ * @brief Class that reads temperature over I2C from the MCP9808 temperature sensor
+ * @details This class contains the functions to read the temperature from the different registers on the sensors.
+ *          This class cannot use all the functions of the MCP9808, like temperature alerts and such, but it does have
+ *          core funtionality
+ * */
 class TempSensor
 {
     protected:
@@ -29,10 +34,10 @@ class TempSensor
         uint8_t address;
 
         //Temp Value address
-        const uint8_t temp = 0x06;
+        const uint8_t temp = 0x05;
 
         //Manufacturer Value address
-        const uint8_t manu = 0x07;
+        const uint8_t manu = 0x06;
 
     public:
         

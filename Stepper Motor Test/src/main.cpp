@@ -20,12 +20,12 @@ void setup() {
 
   digitalWrite(en1, HIGH);
   digitalWrite(en2, HIGH);
-  myStepper.setSpeed(50);
+  myStepper.setSpeed(75);
   Serial.println("Started");
 }
 
 void loop() {
-  myStepper.step(-100);
+  myStepper.step(200);
   Serial.println("200 Steps");
   delay(1000);
 }
