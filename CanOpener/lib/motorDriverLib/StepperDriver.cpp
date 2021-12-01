@@ -1,6 +1,6 @@
 /**
  * @file StepperDriver.cpp
- * @brief Contains the functionality for th StepperDriver class
+ * @brief Contains the functionality for the StepperDriver class
  * 
  * @author Ben Bons
  * @date Nov 30, 2021
