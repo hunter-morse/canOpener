@@ -7,5 +7,9 @@
  * @date Nov 27, 2021
  * 
  * */
+#ifndef TASK_TEMP_H
+#define TASK_TEMP_H
 
 void taskTemp(void* p_params);
+
+#endif

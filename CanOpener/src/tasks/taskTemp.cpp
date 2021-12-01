@@ -13,11 +13,11 @@
 #include "STM32FreeRTOS.h"
 #include "PrintStream.h"
 #include "taskshare.h"
-#include "../lib/TempSensor.h"
+#include "../lib/sensorLib/TempSensor.h"
 #include "shares.h"
 #include "taskTemp.h"
 
-Share<float> currentTemp("Current Temperature");
+// Share<float> currentTemp("Current Temperature");
 
 
 /**

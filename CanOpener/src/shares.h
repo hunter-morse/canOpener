@@ -13,6 +13,8 @@
 
 ///The share into which the current temperature from taskTemp is placed
 extern Share<float> currentTemp;
-
+extern Share<bool> canDetected;
+extern Share<bool> canTopDetected;
+extern Share<bool> canTabDetected;
 
 #endif

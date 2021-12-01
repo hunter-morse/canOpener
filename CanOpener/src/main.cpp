@@ -1,26 +1,22 @@
 /**
-<<<<<<< HEAD
+ * @file main.cpp
  * 
  */
-
-void setup(){}
-void loop(){}
-=======
- * @file main.cpp
- * */
 #include <Arduino.h>
 #include <STM32FreeRTOS.h>
 #include <PrintStream.h>
 #include "shares.h"
 
+Share<float> currentTemp("Current Temperature");
+Share<float> currentTemp;
+Share<bool> canDetected;
+Share<bool> canTopDetected;
+Share<bool> canTabDetected;
 
-void setup()
-{
+void setup(){
     //Setup Code
 }
 
-void loop()
-{
+void loop(){
     //Will not be used bc of FreeRTOS
 }
->>>>>>> 2dd0965cca0f17fba71285b86f235edb94101178
