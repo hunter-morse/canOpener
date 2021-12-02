@@ -27,7 +27,12 @@ void taskMoveMachine(void *p_params){
             if(canDetected.get()){
                 // if can detected then move to next state
                 Serial.println("taskLimitSwitch-state0: Can detected");     // should be written to display
+                vTaskDelay(2000);
                 state = 1;
+            }
+            else
+            {
+                dcMotorBase.move(0);
             }
         } else if(state == 1){//Moving down to find the can state
             // always make sure the can is detected

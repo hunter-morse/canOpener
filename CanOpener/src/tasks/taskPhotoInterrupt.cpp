@@ -35,10 +35,11 @@ void taskPhotoInterrupt(void* p_params){
   
         value = lit - ambient;
 
-        canDetected.put(value < 0);
+        canDetected.put(value < -50);
   
-        Serial << "Value: " << value  << endl;
-        Serial << "Ambient: " << ambient << endl << endl;
+        //Serial << "Value: " << value  << endl;
+        //Serial << "Ambient: " << ambient << endl << endl;
+        //Serial << canDetected.get() << endl;
         vTaskDelay(500);
 
     }

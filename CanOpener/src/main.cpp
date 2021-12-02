@@ -38,12 +38,12 @@ void setup(){
                 3,
                 NULL);
     
-    /*xTaskCreate(taskPhotoInterrupt,
+    xTaskCreate(taskPhotoInterrupt,
                 "Photo Interrupt",
                 1024,
                 NULL,
                 4,
-                NULL);*/
+                NULL);
     /*xTaskCreate(taskTemp,
                 "Temperatures",
                 1024,
@@ -55,13 +55,13 @@ void setup(){
                 2048,
                 NULL,
                 1,
-                NULL);*/
+                NULL);
     xTaskCreate(taskEncoder,
                 "Display",
                 2048,
                 NULL,
                 1,
-                NULL);
+                NULL);*/
     
     vTaskStartScheduler();
 }
