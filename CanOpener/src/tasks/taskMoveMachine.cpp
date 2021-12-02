@@ -83,6 +83,7 @@ void taskMoveMachine(void *p_params){
                 } else {
                     // tell base to rotate and remain in state 3
                     dcMotorBase.move(30);       // rotate the base at 30% speed (pwm)
+                    Serial.println("taskLimitSwitch-state3: Rotating base");
                 }
             } 
             

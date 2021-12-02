@@ -17,7 +17,7 @@ void taskCheckLimitSwitches(void *p_params){
 
     for(;;){
         // check the status of each limit switch and put them to the respective shares
-        canDetected.put(!switch_canDetect.readSwitch());
+        canDetected.put(!switch_canDetect.readSwitch()); //Uncomment to use a limit switch for can detecting
         canTopDetected.put(!switch_canTopDetect.readSwitch());
         canTabDetected.put(!switch_canTabDetect.readSwitch());
         //Serial << "Switch 1: "<< switch_canDetect.readSwitch() << endl;

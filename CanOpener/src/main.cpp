@@ -11,6 +11,7 @@
 #include "tasks/taskTemp.h"
 #include "tasks/taskWriteToDisplay.h"
 #include "tasks/taskEncoder.h"
+#include "tasks/taskPhotoInterrupt.h"
 
 Share<float> currentTemp("Current Temperature");
 Share<bool> canDetected("Can Detected");
@@ -36,6 +37,13 @@ void setup(){
                 NULL,
                 3,
                 NULL);
+    
+    /*xTaskCreate(taskPhotoInterrupt,
+                "Photo Interrupt",
+                1024,
+                NULL,
+                4,
+                NULL);*/
     /*xTaskCreate(taskTemp,
                 "Temperatures",
                 1024,
