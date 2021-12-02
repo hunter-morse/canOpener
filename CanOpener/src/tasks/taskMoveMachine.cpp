@@ -1,4 +1,5 @@
 #include "taskMoveMachine.h"
+#include <math.h>
 
 void taskMoveMachine(void *p_params){
     // Setup task vars
@@ -22,6 +23,10 @@ void taskMoveMachine(void *p_params){
     //Serial.begin(115200);
     Serial << "Task Move Machine begun" << endl;
     for(;;){
+        if (kill.get())
+        {
+            state = 0;
+        }
         // Always check canDetect
         if(state == 0){ //No can in machine state
             if(canDetected.get()){
@@ -86,7 +91,9 @@ void taskMoveMachine(void *p_params){
                 if (canTopDetected.get()){ //Changed from CanTabDetected b/c only one limit switch is planned to be used
                     // do not change state -- only change state if either the can/its top aren't detected
                     dcMotorBase.brake();        // stop rotating the base
-                    Serial.println("taskLimitSwitch-state3: Can tab found!");                   
+                    Serial.println("taskLimitSwitch-state3: Can tab found!");
+                    state = 5;   //Skips state 4 - not seen as useful.   
+                    vTaskDelay(4000);             
                 } else {
                     // tell base to rotate and remain in state 3
                     dcMotorBase.move(motor_PWM);       // rotate the base at 30% speed (pwm)
@@ -103,6 +110,41 @@ void taskMoveMachine(void *p_params){
                 state = 0;
             }
         }
+        else if (state ==4)
+        {
+            if (canTopDetected.get())
+            {
+                dcMotorBase.move(motor_PWM);       // rotate the base at 30% speed (pwm)
+                Serial.println("taskLimitSwitch-state4: Rotating along tab");
+                vTaskDelay(50);
+                dcMotorBase.move(0);
+                vTaskDelay(50);
+            }
+            else
+            {
+                Serial.println("taskLimitSwitch-state4: Can tab position confirmed");
+                state = 5;
+                stepMotor.setPosition(0);
+            }
+        }
+        else if (state == 5)
+        {
+            
+            if (abs(stepMotor.getPosition()) >= abs(400*up_step))
+            {
+                if(!canDetected.get())
+                {
+                    state = 0;
+                    Serial.println("taskLimitSwitch-state5: Can Removed");
+                }
+            }
+            else
+            {
+                stepMotor.move(up_step);
+                Serial.println("taskLimitSwitch-state5: Moving Up");
+            }
+        }
+        
         vTaskDelayUntil(&xLastWakeTime, 10);
     }
 }

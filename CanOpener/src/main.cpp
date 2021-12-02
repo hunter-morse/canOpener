@@ -19,6 +19,7 @@ Share<bool> canTopDetected("Can Top Detected");
 Share<bool> canTabDetected("Can Tab Detected");
 Share<int64_t> enc1("Encoder 1");
 Share<int64_t> enc2("Encoder 2");
+Share<bool> kill("Kill Switch");
 
 void setup(){
     Serial.begin(115200);

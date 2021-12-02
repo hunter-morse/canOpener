@@ -29,4 +29,7 @@ extern Share<int64_t> enc1;
 //The share that holds the current encoder 2 position
 extern Share<int64_t> enc2;
 
+///The share for the kill switch
+extern Share<bool> kill;
+
 #endif
