@@ -17,12 +17,12 @@ void taskCheckLimitSwitches(void *p_params){
 
     for(;;){
         // check the status of each limit switch and put them to the respective shares
-        canDetected.put(switch_canDetect.readSwitch());
-        canTopDetected.put(switch_canTopDetect.readSwitch());
-        canTabDetected.put(switch_canTabDetect.readSwitch());
+        canDetected.put(!switch_canDetect.readSwitch());
+        canTopDetected.put(!switch_canTopDetect.readSwitch());
+        canTabDetected.put(!switch_canTabDetect.readSwitch());
         //Serial << "Switch 1: "<< switch_canDetect.readSwitch() << endl;
-        Serial << "Switch 2: "<< switch_canTopDetect.readSwitch() << endl;
-        Serial << "Switch 3: "<< switch_canTabDetect.readSwitch() << endl;
+        //Serial << "Switch 2: "<< switch_canTopDetect.readSwitch() << endl;
+        //Serial << "Switch 3: "<< switch_canTabDetect.readSwitch() << endl;
 
         vTaskDelayUntil(&xLastWakeTime, 100);
     }
