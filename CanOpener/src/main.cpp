@@ -26,13 +26,14 @@ void setup(){
                 NULL,
                 4,
                 NULL);
-    /*
+
     xTaskCreate(taskMoveMachine,
                 "Move Machine",
-                2048,
+                8192,
                 NULL,
                 3,
                 NULL);
+
     xTaskCreate(taskTemp,
                 "Temperatures",
                 1024,
@@ -51,7 +52,6 @@ void setup(){
                 NULL,
                 1,
                 NULL);
-    */
     vTaskStartScheduler();
 }
 
