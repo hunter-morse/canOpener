@@ -29,9 +29,9 @@ void photoInterruptTask(void* p_params){
         delay(5);
         lit = analogRead(IR_INPUT_PIN);
   
-         value = lit - ambient;
+        value = lit - ambient;
   
-         Serial.println(value);
+        Serial.println(value);
         vTaskDelay(2000);
 
     }
