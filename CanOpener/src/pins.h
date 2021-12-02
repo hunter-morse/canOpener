@@ -34,9 +34,9 @@
 #define STEP1EN PC15
 
 // Limit Switches
-#define INLIM1  PC12
+#define INLIM1  PC4
 #define INLIM2  PC5
-#define INLIM3  PC4
+#define INLIM3  PC12
 
 // Encoders
 #define ENC1a   PB6 //TIM4
@@ -45,5 +45,9 @@
 #define ENC2a   PA0 //TIM5
 #define ENC2b   PA1
 #define ENC2TIM TIM5
+
+// Reflective Sensor
+#define OUT_REFL PC10
+#define IN_REFL PA4
 
 #endif

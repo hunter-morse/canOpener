@@ -38,7 +38,7 @@ void taskTemp(void* p_params)
     // See here for why this was included (Essentially increases timing accuracy)
     //https://canvas.calpoly.edu/courses/57860/files/5478349?wrap=1
     TickType_t xLastWakeTime = xTaskGetTickCount();
-
+    Serial << "Task Temp begun" << endl;
     TempSensor sensor(scl_pin, sda_pin, addr);
     for (;;)
     {

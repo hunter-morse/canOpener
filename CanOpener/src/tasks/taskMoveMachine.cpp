@@ -18,8 +18,8 @@ void taskMoveMachine(void *p_params){
 
     // Included to increase timing accuracy (https://canvas.calpoly.edu/courses/57860/files/5478349?wrap=1)
     TickType_t xLastWakeTime = xTaskGetTickCount();
-    Serial.begin(115200);
-
+    //Serial.begin(115200);
+    Serial << "Task Move Machine begun" << endl;
     for(;;){
         // Always check canDetect
         if(state = 0){ //No can in machine state
