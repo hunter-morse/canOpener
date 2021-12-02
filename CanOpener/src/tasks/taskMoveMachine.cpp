@@ -15,6 +15,7 @@ void taskMoveMachine(void *p_params){
 
     int16_t down_step = 4; //Amount of steps to move down each cycle
     int16_t up_step = -1*down_step; //Amount of steps to move up each cycle
+    float motor_PWM = 15; //PWM for the base motor to rotate at.
 
     // Included to increase timing accuracy (https://canvas.calpoly.edu/courses/57860/files/5478349?wrap=1)
     TickType_t xLastWakeTime = xTaskGetTickCount();
@@ -72,18 +73,22 @@ void taskMoveMachine(void *p_params){
                 // if no can detected then go back to state 0
                 Serial.println("taskLimitSwitch-state3: Can not detected");
                 state = 0;
+                dcMotorBase.move(0);
             } 
             // make sure can and top are detected
             else if (canDetected.get()){
                 // check to see if tab has been found
-                if (canTabDetected.get()){
+                if (canTopDetected.get()){ //Changed from CanTabDetected b/c only one limit switch is planned to be used
                     // do not change state -- only change state if either the can/its top aren't detected
                     dcMotorBase.brake();        // stop rotating the base
                     Serial.println("taskLimitSwitch-state3: Can tab found!");                   
                 } else {
                     // tell base to rotate and remain in state 3
-                    dcMotorBase.move(30);       // rotate the base at 30% speed (pwm)
+                    dcMotorBase.move(motor_PWM);       // rotate the base at 30% speed (pwm)
                     Serial.println("taskLimitSwitch-state3: Rotating base");
+                    vTaskDelay(50);
+                    dcMotorBase.move(0);
+                    vTaskDelay(50);
                 }
             } 
             
