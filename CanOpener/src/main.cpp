@@ -30,12 +30,12 @@ void setup(){
                 4,
                 NULL);
     
-    /*xTaskCreate(taskMoveMachine,
+    xTaskCreate(taskMoveMachine,
                 "Move Machine",
                 8192,
                 NULL,
                 3,
-                NULL);*/
+                NULL);
     /*xTaskCreate(taskTemp,
                 "Temperatures",
                 1024,

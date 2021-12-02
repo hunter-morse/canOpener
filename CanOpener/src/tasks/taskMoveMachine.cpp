@@ -13,7 +13,7 @@ void taskMoveMachine(void *p_params){
     MotorDriver dcMotorHead(1, DC2a, DC2b, DCEN2, pwm);     // head motor
     StepperDriver stepMotor(0, stepsPerRev, STEP1a, STEP1b, STEP1c, STEP1d, STEP1EN, stepSpeed);    // stepper motor
 
-    int16_t down_step = -4; //Amount of steps to move down each cycle
+    int16_t down_step = 4; //Amount of steps to move down each cycle
     int16_t up_step = -1*down_step; //Amount of steps to move up each cycle
 
     // Included to increase timing accuracy (https://canvas.calpoly.edu/courses/57860/files/5478349?wrap=1)
@@ -22,13 +22,13 @@ void taskMoveMachine(void *p_params){
     Serial << "Task Move Machine begun" << endl;
     for(;;){
         // Always check canDetect
-        if(state = 0){ //No can in machine state
+        if(state == 0){ //No can in machine state
             if(canDetected.get()){
                 // if can detected then move to next state
                 Serial.println("taskLimitSwitch-state0: Can detected");     // should be written to display
                 state = 1;
             }
-        } else if(state = 1){//Moving down to find the can state
+        } else if(state == 1){//Moving down to find the can state
             // always make sure the can is detected
             if(!canDetected.get()){
                 // if no can detected then go back to state 0
@@ -41,11 +41,12 @@ void taskMoveMachine(void *p_params){
                 stepMotor.setPosition(0);
             } else {
                 // if can top not detected then move the head down and remain in current state
-                stepMotor.setSpeed(200);
+                stepMotor.setSpeed(75);
                 stepMotor.move(down_step);
+                Serial.println("taskLimitSwitch-state1: Moving Down");
                 // do nothing, stay in state 1
             }
-        } else if (state = 2){
+        } else if (state == 2){
             if(!canDetected.get()){
                 // if no can detected then go back to state 0
                 Serial.println("taskLimitSwitch-state1: Can not detected");
@@ -65,7 +66,7 @@ void taskMoveMachine(void *p_params){
                 }
             }
         
-        }else if (state = 3){
+        }else if (state == 3){
             // always make sure the can is detected
             if(!canDetected.get()){
                 // if no can detected then go back to state 0
