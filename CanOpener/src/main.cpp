@@ -20,38 +20,41 @@ Share<int64_t> enc1("Encoder 1");
 Share<int64_t> enc2("Encoder 2");
 
 void setup(){
+    Serial.begin(115200);
+    delay(5000);
+    Serial << "Begun" << endl;
     xTaskCreate(taskCheckLimitSwitches, 
                 "Limit Switches",
                 2048,
                 NULL,
                 4,
                 NULL);
-
-    xTaskCreate(taskMoveMachine,
+    
+    /*xTaskCreate(taskMoveMachine,
                 "Move Machine",
                 8192,
                 NULL,
                 3,
-                NULL);
-
-    xTaskCreate(taskTemp,
+                NULL);*/
+    /*xTaskCreate(taskTemp,
                 "Temperatures",
                 1024,
                 NULL,
                 2,
-                NULL);
-    xTaskCreate(taskWriteToDisplay,
+                NULL);*/
+    /*xTaskCreate(taskWriteToDisplay,
                 "Display",
                 2048,
                 NULL,
                 1,
-                NULL);
+                NULL);*/
     xTaskCreate(taskEncoder,
                 "Display",
                 2048,
                 NULL,
                 1,
                 NULL);
+    
     vTaskStartScheduler();
 }
 
