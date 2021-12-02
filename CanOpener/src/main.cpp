@@ -14,8 +14,8 @@
 
 Share<float> currentTemp("Current Temperature");
 Share<bool> canDetected("Can Detected");
-Share<bool> canTopDetected("Can Top");
-Share<bool> canTabDetected("Can Tab");
+Share<bool> canTopDetected("Can Top Detected");
+Share<bool> canTabDetected("Can Tab Detected");
 Share<int64_t> enc1("Encoder 1");
 Share<int64_t> enc2("Encoder 2");
 
@@ -26,6 +26,7 @@ void setup(){
                 NULL,
                 4,
                 NULL);
+    /*
     xTaskCreate(taskMoveMachine,
                 "Move Machine",
                 2048,
@@ -50,6 +51,7 @@ void setup(){
                 NULL,
                 1,
                 NULL);
+    */
     vTaskStartScheduler();
 }
 

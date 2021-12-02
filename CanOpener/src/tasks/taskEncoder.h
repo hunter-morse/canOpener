@@ -12,5 +12,6 @@
 #include "../pins.h"
 
 void taskEncoder(void* p_params);
+int64_t fixDelta(int64_t delta, uint32_t period);
 
 #endif

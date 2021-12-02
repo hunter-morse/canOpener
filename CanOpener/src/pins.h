@@ -1,3 +1,8 @@
+/**
+ * @file pins.h
+ * @brief Definition of all pins used
+ */ 
+
 #ifndef PINS_H
 #define PINS_H
 
