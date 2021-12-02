@@ -33,7 +33,7 @@ void setup(){
     
     xTaskCreate(taskMoveMachine,
                 "Move Machine",
-                2048,
+                8192,
                 NULL,
                 3,
                 NULL);

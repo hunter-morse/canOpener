@@ -1,9 +1,5 @@
 #include "taskLimitSwitch.h"
 
-// #define pin_canDetect       PC12
-// #define pin_canTopDetect    PC4
-// #define pin_canTabDetect    PC5 
-
 void taskCheckLimitSwitches(void *p_params){
     // Instantiate limit switches
     LimitSwitch switch_canDetect(0, INLIM1);        // canDetect
