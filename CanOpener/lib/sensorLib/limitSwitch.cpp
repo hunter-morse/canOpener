@@ -1,6 +1,8 @@
 /**
- * 
- * 
+ * @file    limitSwitch.cpp
+ *          Driver to interface with limit switches
+ * @author  Hunter Morse
+ * @date    Nov xx, 2021         
  */
 
 #include "limitSwitch.h"

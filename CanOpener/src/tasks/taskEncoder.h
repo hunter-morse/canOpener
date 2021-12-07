@@ -3,7 +3,7 @@
  *          Encoder task .h file
  * @author  Ben Bons
  * @date    Nov xx, 2021
- * */
+ */
 
 #ifndef TASKENCODER_H
 #define TASKENCODER_H

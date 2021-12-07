@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resume_20',['resume',['../class_s_t_m32_encoder.html#ab9133c7ac41f4ca78b59947dce1070a8',1,'STM32Encoder']]]
+  ['kill_18',['kill',['../shares_8h.html#a0b3b7f30c1e110a3da5e324b673e874b',1,'shares.h']]]
 ];
