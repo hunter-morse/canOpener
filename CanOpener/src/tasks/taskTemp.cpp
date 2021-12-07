@@ -42,8 +42,8 @@ void taskTemp(void* p_params)
     TempSensor sensor(scl_pin, sda_pin, addr);
     for (;;)
     {
-        currentTemp.put(sensor.getTempC());
-        
+        currentTemp.put(sensor.getManuCode());
+        Serial << "Temperature: " << currentTemp.get() << endl;
         //From the same Canvas site as above.
         vTaskDelayUntil (&xLastWakeTime, 500);
     }
