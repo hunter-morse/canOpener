@@ -1,3 +1,10 @@
+/**
+ * @file    taskLimitSwitch.h
+ *          Limit switch checker task .h file
+ * @author  Hunter Morse
+ * @date    Nov xx, 2021
+ */ 
+
 #ifndef TASK_LIMIT_SWITCH_H
 #define TASK_LIMIT_SWITCH_H
 

@@ -1,6 +1,8 @@
 /**
- * @file pins.h
- * @brief Definition of all pins used
+ * @file    pins.h
+ *          Definition of all pins used
+ * @author  Hunter Morse
+ * @date    Nov xx, 2021
  */ 
 
 #ifndef PINS_H

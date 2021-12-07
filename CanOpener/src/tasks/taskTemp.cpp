@@ -1,11 +1,11 @@
 /**
- * @file taskTemp.cpp
- * @brief Task for recording temperature from the MCP9808 temperature sensor.
+ * @file    taskTemp.cpp
+ * @brief   Task for recording temperature from the MCP9808 temperature sensor.
  * @details This task will record the current temperature of the can every 0.5 seconds. 
  *          The task is build to work with the FreeRTOS system.
  * 
- * @author Ben Bons
- * @date Nov 27, 2021
+ * @author  Ben Bons
+ * @date    Nov 27, 2021
  * */
 
 #include <Arduino.h>
@@ -21,12 +21,13 @@
 
 
 /**
- * @brief Task that periodically reads the temperature of the can and puts it into a variable to be read elsewhere
- * @details This task will read a temperature off of the MCP9808 sensor. The task puts this temperature into a Share<float> object
+ * @brief   Task that periodically reads the temperature of the can and puts it into a variable to be read elsewhere
+ * @details Period: 500ms, Priority: 2/4
+ *          This task will read a temperature off of the MCP9808 sensor. The task puts this temperature into a Share<float> object
  *          that can be read by the printout task later on. It uses vTaskDelayUntil for high accuracy with the timing, so that this
  *          occurs every 0.5 seconds
  * 
- * @param p_params An unused parameter where other parameters could be passed in, but they aren't as that is outside the scope of this course
+ * @param   p_params An unused parameter where other parameters could be passed in, but they aren't as that is outside the scope of this course
  * */
 void taskTemp(void* p_params)
 {

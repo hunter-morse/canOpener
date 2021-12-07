@@ -1,5 +1,29 @@
+/**
+ * @file    taskMoveMachine.cpp
+ *          Task to control the two DC and one servo motor on the canopener
+ *          Each state in the task is controlled by the limit switches in 
+ *          taskLimitSwitches.cpp
+ * @author  Hunter Morse
+ * @date    Nov xx, 2021
+ */
+
 #include "taskMoveMachine.h"
 #include <math.h>
+
+/**
+ * @brief   Task: Move Machine
+ * @details Period: 10ms, Priority: 3/4
+ *          Task dictates the movement of the machine through 8 distinct states. 
+ *          State   0: Check if can detected in machine
+ *                  1: Move head down until touching top of can
+ *                  2: Back of slightly from the top of the can
+ *                  3: Rotate base to find the tab
+ *                  4: Open the can
+ *                  5: Move head up for easy removal of the can
+ *                  6: Move the opening motor back to position
+ *                  7: Move the base back to position
+ * @param   p_params: task parameters
+ */                 
 
 void taskMoveMachine(void *p_params){
     // Setup task vars

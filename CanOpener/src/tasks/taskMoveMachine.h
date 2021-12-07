@@ -1,3 +1,10 @@
+/**
+ * @file    taskMoveMachine.h
+ *          Machine movement task .h file
+ * @author  Hunter Morse
+ * @date    Nov xx, 2021
+ */ 
+
 #ifndef TASK_MOVE_MACHINE_H
 #define TASK_MOVE_MACHINE_H
 

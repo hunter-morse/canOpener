@@ -1,3 +1,13 @@
+/**
+ * @file    taskPhotoInterrupt.cpp
+ *          Task to check the status of the photo interrupt sensor
+ *          Lit vs ambient IR light data is compared to determine
+ *          if a reflective object is present in front of the sensor. 
+ *          Results are put to the canDetected share.
+ * @author  
+ * @date    Nov xx, 2021
+ */
+
 #include <Arduino.h>
 #include <PrintStream.h>
 #if (defined STM32L4xx || defined STM32F4xx)
@@ -7,8 +17,13 @@
 #include "../pins.h"
 #include "../shares.h"
 
-//const uint8_t IR_INPUT_PIN = A1;
-//const uint8_t IR_LED_PIN  = D7;
+/**
+ * @brief   Task: Check Photo Interrupt
+ * @details Period: 500ms, Priority: 4/4
+ *          Check whether or not a reflective object (can) is present
+ *          on the platform
+ * @param   p_param: task parameters
+ */ 
 
 void taskPhotoInterrupt(void* p_params){
 

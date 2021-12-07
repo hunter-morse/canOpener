@@ -1,6 +1,7 @@
 /**
- * @file taskWriteToDisplay.cpp
- * @brief Header file for taskWriteToDisplay
+ * @file    taskWriteToDisplay.cpp
+ *          Task to write the temperature of the can to a display
+ *          Temperature data is recieved from the temperature share
  * 
  * @author Ben Bons
  * @date Nov 27, 2021
@@ -11,6 +12,13 @@
 #include "PrintStream.h"
 #include "shares.h"
 #include "taskWriteToDisplay.h"
+
+/**
+ * @brief   Task: Write to Display
+ * @details Period: 1000ms, Priority: 1
+ *          Write can temperature data to display
+ * @param   p_params: task parameters
+ */ 
 
 void taskWriteToDisplay(void* p_params)
 {

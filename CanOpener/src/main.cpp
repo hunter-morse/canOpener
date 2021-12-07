@@ -1,6 +1,9 @@
 /**
- * @file main.cpp
- * 
+ * @file    main.cpp
+ *          Main file for the ME 507 CanOpener robot
+ *          Developed on a Nucleo L476RG Development Board using FreeRTOS
+ * @authors Hunter Morse, Ben Bons, Kyle Van Housen
+ * @date    Fall 2021
  */
 #include <Arduino.h>
 #include <STM32FreeRTOS.h>
