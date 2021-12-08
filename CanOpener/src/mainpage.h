@@ -33,5 +33,5 @@
  * @date Fall 2021
  * 
  * @paragraph Attributions
- *      Style from @b https://github.com/kcwongjoe/doxygen_theme_flat_design under the MIT license
+ * Style from @b https://github.com/kcwongjoe/doxygen_theme_flat_design under the MIT license
  **/
