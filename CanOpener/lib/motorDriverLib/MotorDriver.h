@@ -38,14 +38,23 @@ class MotorDriver
 
 
     protected:
+        /// The id of the MotorDriver object
         uint8_t id;
+        /// The current PWM value
         float   PWM;
+        /// The maximum PWM allowed
         int8_t  PWM_max;
+        /// The minimum PWM allowed
         int8_t  PWM_min;
+        /// The positive pin connected to the motor
         uint8_t pinA;
+        /// The negative pin connected to the motor
         uint8_t pinB;
+        /// The enable pin
         uint8_t pinEN;
+        /// The time that the motor will brake when switching directions
         uint16_t brake_delay;
+        /// The current direction of the motor: 1 = forward, 0 = stopped, -1 = reverse
         int8_t  direction;
 };
 

@@ -38,17 +38,23 @@ class StepperDriver
         uint8_t getID(void);
 
     protected:
+        /// The current position of the motor
         int32_t curr_pos;
+        /// The ID of the StepperDriver object
         uint8_t id;
-        
+        /// The pin connected to the positive side of the A coil
         uint8_t pin_A;
+        /// The pin connected to the negative side of the A coil
         uint8_t pin_Abar;
+        /// The pin connected to the positive side of the B coil
         uint8_t pin_B;
+        /// The pin connected to the negative side of the A coil
         uint8_t pin_Bbar;
+        /// The enable pin
         uint8_t pin_enable;
-
+        /// The speed in RPM the motor rotates at
         float speed;
-
+        /// A pointer to a Stepper object 
         Stepper* p_Stepper; 
 
 };

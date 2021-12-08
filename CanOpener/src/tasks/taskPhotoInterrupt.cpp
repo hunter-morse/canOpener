@@ -4,7 +4,8 @@
  *          Lit vs ambient IR light data is compared to determine
  *          if a reflective object is present in front of the sensor. 
  *          Results are put to the canDetected share.
- * @author  
+ * @author  Kyle Van Housen
+ * 
  * @date    Nov xx, 2021
  */
 
