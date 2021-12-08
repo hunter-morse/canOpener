@@ -1,5 +1,6 @@
 var class_limit_switch =
 [
+    [ "Attributions", "index.html#Attributions", null ],
     [ "LimitSwitch", "class_limit_switch.html#a1adfd061bbc460eb383b74ea20119947", null ],
     [ "readSwitch", "class_limit_switch.html#ac315d883f66b9cc24d09570a027ca0ff", null ],
     [ "inPin", "class_limit_switch.html#a8490a0356e3d80d2cc14eb2b36a8623c", null ],

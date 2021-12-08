@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -89,11 +90,16 @@ $(document).ready(function(){initNavTree('class_limit_switch.html',''); initResi
 <div class="title">LimitSwitch Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class which reads from a limit switch.  
+ <a href="class_limit_switch.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="limit_switch_8h_source.html">limitSwitch.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1adfd061bbc460eb383b74ea20119947"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_limit_switch.html#a1adfd061bbc460eb383b74ea20119947">LimitSwitch</a> (uint8_t switchID, uint8_t <a class="el" href="class_limit_switch.html#a8490a0356e3d80d2cc14eb2b36a8623c">inPin</a>)</td></tr>
-<tr class="memdesc:a1adfd061bbc460eb383b74ea20119947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered status.  <a href="class_limit_switch.html#a1adfd061bbc460eb383b74ea20119947">More...</a><br /></td></tr>
+<tr class="memitem:a1adfd061bbc460eb383b74ea20119947"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_limit_switch.html#a1adfd061bbc460eb383b74ea20119947">LimitSwitch</a> (uint8_t <a class="el" href="class_limit_switch.html#a5225caafa764fa29d2adab5be04796fd">switchID</a>, uint8_t <a class="el" href="class_limit_switch.html#a8490a0356e3d80d2cc14eb2b36a8623c">inPin</a>)</td></tr>
+<tr class="memdesc:a1adfd061bbc460eb383b74ea20119947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_limit_switch.html" title="Class which reads from a limit switch.">LimitSwitch</a> class.  <a href="class_limit_switch.html#a1adfd061bbc460eb383b74ea20119947">More...</a><br /></td></tr>
 <tr class="separator:a1adfd061bbc460eb383b74ea20119947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac315d883f66b9cc24d09570a027ca0ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_limit_switch.html#ac315d883f66b9cc24d09570a027ca0ff">readSwitch</a> (void)</td></tr>
 <tr class="memdesc:ac315d883f66b9cc24d09570a027ca0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the condition of the limit switch.  <a href="class_limit_switch.html#ac315d883f66b9cc24d09570a027ca0ff">More...</a><br /></td></tr>
@@ -102,18 +108,23 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a5225caafa764fa29d2adab5be04796fd"><td class="memItemLeft" align="right" valign="top"><a id="a5225caafa764fa29d2adab5be04796fd"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>switchID</b></td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_limit_switch.html#a5225caafa764fa29d2adab5be04796fd">switchID</a></td></tr>
+<tr class="memdesc:a5225caafa764fa29d2adab5be04796fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of switch. <br /></td></tr>
 <tr class="separator:a5225caafa764fa29d2adab5be04796fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8490a0356e3d80d2cc14eb2b36a8623c"><td class="memItemLeft" align="right" valign="top"><a id="a8490a0356e3d80d2cc14eb2b36a8623c"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_limit_switch.html#a8490a0356e3d80d2cc14eb2b36a8623c">inPin</a></td></tr>
-<tr class="memdesc:a8490a0356e3d80d2cc14eb2b36a8623c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of switch. <br /></td></tr>
+<tr class="memdesc:a8490a0356e3d80d2cc14eb2b36a8623c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input pin on board <br  />
+ <br /></td></tr>
 <tr class="separator:a8490a0356e3d80d2cc14eb2b36a8623c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ee9a08d5daf07ede447229b1adaee3"><td class="memItemLeft" align="right" valign="top"><a id="aa2ee9a08d5daf07ede447229b1adaee3"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_limit_switch.html#aa2ee9a08d5daf07ede447229b1adaee3">triggered</a></td></tr>
-<tr class="memdesc:aa2ee9a08d5daf07ede447229b1adaee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Input pin on board. <br /></td></tr>
+<tr class="memdesc:aa2ee9a08d5daf07ede447229b1adaee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered status. <br /></td></tr>
 <tr class="separator:aa2ee9a08d5daf07ede447229b1adaee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class which reads from a limit switch. </p>
+<p>This class reads a limit switch and determines which state it is in. Note that limit switches can be wired pretty differently from switch to switch, so it is up to the user to determine which boolean value corresponds with each switch state </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1adfd061bbc460eb383b74ea20119947"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1adfd061bbc460eb383b74ea20119947">&#9670;&nbsp;</a></span>LimitSwitch()</h2>
 
@@ -140,8 +151,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Triggered status. </p>
-<p>Constructor for the <a class="el" href="class_limit_switch.html">LimitSwitch</a> class.</p>
+<p>Constructor for the <a class="el" href="class_limit_switch.html" title="Class which reads from a limit switch.">LimitSwitch</a> class. </p>
 <p>This constructor sets an ID for the switch and sets which pin the limit switch is connected to.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

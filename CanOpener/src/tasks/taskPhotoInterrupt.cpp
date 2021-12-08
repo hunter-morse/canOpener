@@ -6,7 +6,7 @@
  *          Results are put to the canDetected share.
  * @author  Kyle Van Housen
  * 
- * @date    Nov xx, 2021
+ * @date    Dec 02, 2021
  */
 
 #include <Arduino.h>
@@ -23,7 +23,7 @@
  * @details Period: 500ms, Priority: 4/4
  *          Check whether or not a reflective object (can) is present
  *          on the platform
- * @param   p_param: task parameters
+ * @param   p_params task parameters
  */ 
 
 void taskPhotoInterrupt(void* p_params){

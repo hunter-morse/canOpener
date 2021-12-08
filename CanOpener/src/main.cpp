@@ -29,7 +29,7 @@ Share<int64_t> enc1("Encoder 1");
 Share<int64_t> enc2("Encoder 2");
 /// Share that tells if the kill switch is depressed
 Share<bool> kill("Kill Switch");
-
+/// @cond
 void setup(){
     Serial.begin(115200);
     delay(5000);
@@ -79,3 +79,4 @@ void setup(){
 void loop(){
     //Will not be used bc of FreeRTOS
 }
+/// @endcond

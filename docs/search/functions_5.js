@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pause_125',['pause',['../class_s_t_m32_encoder.html#a67f9555e6838296b6533f6ab71a0530e',1,'STM32Encoder']]]
+  ['kill_134',['kill',['../main_8cpp.html#ab9468c9c186f66ca87968c876d5a6937',1,'main.cpp']]]
 ];

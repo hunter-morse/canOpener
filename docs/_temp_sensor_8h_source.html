@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -106,8 +107,7 @@ $(document).ready(function(){initNavTree('_temp_sensor_8h_source.html',''); init
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_temp_sensor.html#ac50918e2d335a60c51066a538053d8ce">   37</a></span>&#160;        <span class="keyword">const</span> uint8_t <a class="code" href="class_temp_sensor.html#ac50918e2d335a60c51066a538053d8ce">temp</a> = 0x05;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">//Manufacturer Value register address</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> uint8_t manu = 0x06;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_temp_sensor.html#ab737f9e650bb43857653b2406a0599cf">   40</a></span>&#160;        <span class="keyword">const</span> uint8_t <a class="code" href="class_temp_sensor.html#ab737f9e650bb43857653b2406a0599cf">manu</a> = 0x06;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
@@ -131,6 +131,7 @@ $(document).ready(function(){initNavTree('_temp_sensor_8h_source.html',''); init
 <div class="ttc" id="aclass_temp_sensor_html_a0cccb0b4996fea4fef493cac215964dc"><div class="ttname"><a href="class_temp_sensor.html#a0cccb0b4996fea4fef493cac215964dc">TempSensor::sda_pin</a></div><div class="ttdeci">uint8_t sda_pin</div><div class="ttdoc">SDA Pin.</div><div class="ttdef"><b>Definition:</b> TempSensor.h:31</div></div>
 <div class="ttc" id="aclass_temp_sensor_html_aba3ed204bae6bc9f506993001460215e"><div class="ttname"><a href="class_temp_sensor.html#aba3ed204bae6bc9f506993001460215e">TempSensor::getTempC</a></div><div class="ttdeci">float getTempC()</div><div class="ttdoc">Gets the temperature in Celsius from the sensor.</div><div class="ttdef"><b>Definition:</b> TempSensor.cpp:41</div></div>
 <div class="ttc" id="aclass_temp_sensor_html_ae8a5c53b7f79ce65ae45b5162759acbd"><div class="ttname"><a href="class_temp_sensor.html#ae8a5c53b7f79ce65ae45b5162759acbd">TempSensor::getManuCode</a></div><div class="ttdeci">uint16_t getManuCode()</div><div class="ttdoc">Returns the manufacturer code from the MCP9808.</div><div class="ttdef"><b>Definition:</b> TempSensor.cpp:91</div></div>
+<div class="ttc" id="aclass_temp_sensor_html_ab737f9e650bb43857653b2406a0599cf"><div class="ttname"><a href="class_temp_sensor.html#ab737f9e650bb43857653b2406a0599cf">TempSensor::manu</a></div><div class="ttdeci">const uint8_t manu</div><div class="ttdoc">Manufacturer Value register address.</div><div class="ttdef"><b>Definition:</b> TempSensor.h:40</div></div>
 <div class="ttc" id="aclass_temp_sensor_html_a5ca31c0660d324abe25c5cc735aedcf4"><div class="ttname"><a href="class_temp_sensor.html#a5ca31c0660d324abe25c5cc735aedcf4">TempSensor::TempSensor</a></div><div class="ttdeci">TempSensor(uint8_t scl, uint8_t sda, uint8_t add)</div><div class="ttdoc">Constructor for the TempSensor class.</div><div class="ttdef"><b>Definition:</b> TempSensor.cpp:25</div></div>
 <div class="ttc" id="aclass_temp_sensor_html_acab5d7bd8a1f263e29504075180315b0"><div class="ttname"><a href="class_temp_sensor.html#acab5d7bd8a1f263e29504075180315b0">TempSensor::scl_pin</a></div><div class="ttdeci">uint8_t scl_pin</div><div class="ttdoc">SCL pin.</div><div class="ttdef"><b>Definition:</b> TempSensor.h:28</div></div>
 <div class="ttc" id="aclass_temp_sensor_html"><div class="ttname"><a href="class_temp_sensor.html">TempSensor</a></div><div class="ttdoc">Class that reads temperature over I2C from the MCP9808 temperature sensor.</div><div class="ttdef"><b>Definition:</b> TempSensor.h:25</div></div>

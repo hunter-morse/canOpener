@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['setposition_128',['setPosition',['../class_stepper_driver.html#a30a9fdba86cd0a5e5cddfecbc90a816a',1,'StepperDriver']]],
-  ['setspeed_129',['setSpeed',['../class_stepper_driver.html#a02d8a9c7252d78751576712e0bbf9408',1,'StepperDriver']]],
-  ['stepperdriver_130',['StepperDriver',['../class_stepper_driver.html#a7d0fc716ae6d3c20001f4fbf780b26e1',1,'StepperDriver']]],
-  ['stm32encoder_131',['STM32Encoder',['../class_s_t_m32_encoder.html#af12a9e4c2a45e9d096d0611a0cbc7589',1,'STM32Encoder']]]
+  ['motordriver_136',['MotorDriver',['../class_motor_driver.html#a865fc184ae132a955f74150c162b7507',1,'MotorDriver']]],
+  ['move_137',['move',['../class_motor_driver.html#a3dfc6cc86e5ba2587d4baf18efaf4dfd',1,'MotorDriver::move()'],['../class_stepper_driver.html#ac93ee5cdedb71ee0409b693a8c031b83',1,'StepperDriver::move()']]]
 ];

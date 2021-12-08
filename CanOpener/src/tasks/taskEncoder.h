@@ -2,7 +2,7 @@
  * @file    taskEncoder.h
  *          Encoder task .h file
  * @author  Ben Bons
- * @date    Nov xx, 2021
+ * @date    Dec 01, 2021
  */
 
 #ifndef TASKENCODER_H

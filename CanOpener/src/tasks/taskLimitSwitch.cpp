@@ -4,7 +4,7 @@
  *          The status of each limit switch is put into its respective share
  *          so that the taskMoveMachine can function.
  * @author  Hunter Morse
- * @date    Nov xx, 2021
+ * @date    Nov 30, 2021
  */
 
 #include "taskLimitSwitch.h"
@@ -13,7 +13,7 @@
  * @brief   Task: Check Limit Switches
  * @details Period: 100ms, Priority: 4/4
  *          Check the status of each limit switch the result into its respective share
- * @param   p_param: task parameters
+ * @param   p_params task parameters
  */
 
 void taskCheckLimitSwitches(void *p_params){

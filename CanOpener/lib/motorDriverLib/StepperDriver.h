@@ -4,7 +4,7 @@
  * @details This file is what is included when the StepperDriver class is included. It includes protections against multiple inclusions
  * 
  * @author Ben Bons
- * @date 18 Nov, 2021
+ * @date Nov 18, 2021
  * */
 
 #ifndef Stepper_Driver_h

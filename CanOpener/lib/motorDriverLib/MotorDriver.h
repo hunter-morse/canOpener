@@ -14,7 +14,7 @@
 
 
 /**
- * @brief A class which controls a servo motor
+ * @brief Class which controls a servo motor
  * @details This class allows for PWM control of a servo motor. The motor must be a simple 2-wire servo motor.
  *          The class includes protections against quick reversal of the motor with a (blocking) brake delay.
  *          The class will also allow for a maximum PWM to be used.

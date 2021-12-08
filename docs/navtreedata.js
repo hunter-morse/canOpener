@@ -25,6 +25,9 @@
 var NAVTREE =
 [
   [ "Can Opener - ME 507", "index.html", [
+    [ "Introduction", "index.html#Introduction", null ],
+    [ "Tasks", "index.html#Tasks", null ],
+    [ "Classes", "index.html#Classes", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

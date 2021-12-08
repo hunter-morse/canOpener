@@ -2,7 +2,7 @@
  * @file    taskMoveMachine.h
  *          Machine movement task .h file
  * @author  Hunter Morse
- * @date    Nov xx, 2021
+ * @date    Nov 30, 2021
  */ 
 
 #ifndef TASK_MOVE_MACHINE_H

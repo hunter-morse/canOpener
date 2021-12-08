@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readswitch_126',['readSwitch',['../class_limit_switch.html#ac315d883f66b9cc24d09570a027ca0ff',1,'LimitSwitch']]],
-  ['resume_127',['resume',['../class_s_t_m32_encoder.html#ab9133c7ac41f4ca78b59947dce1070a8',1,'STM32Encoder']]]
+  ['limitswitch_135',['LimitSwitch',['../class_limit_switch.html#a1adfd061bbc460eb383b74ea20119947',1,'LimitSwitch']]]
 ];

@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -108,15 +109,17 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ad0b8ae4e9f09d6e6ce3c78744815c0d5"><td class="memItemLeft" align="right" valign="top"><a id="ad0b8ae4e9f09d6e6ce3c78744815c0d5"></a>
-const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>tim4period</b> = 65535</td></tr>
+const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_encoder_8cpp.html#ad0b8ae4e9f09d6e6ce3c78744815c0d5">tim4period</a> = 65535</td></tr>
+<tr class="memdesc:ad0b8ae4e9f09d6e6ce3c78744815c0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The period of Timer 4. <br /></td></tr>
 <tr class="separator:ad0b8ae4e9f09d6e6ce3c78744815c0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4584c60501b75f03ee7e37c7b54eda0"><td class="memItemLeft" align="right" valign="top"><a id="ae4584c60501b75f03ee7e37c7b54eda0"></a>
-const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>tim5period</b> = UINT32_MAX</td></tr>
+const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="task_encoder_8cpp.html#ae4584c60501b75f03ee7e37c7b54eda0">tim5period</a> = UINT32_MAX</td></tr>
+<tr class="memdesc:ae4584c60501b75f03ee7e37c7b54eda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The period of Timer 5. <br /></td></tr>
 <tr class="separator:ae4584c60501b75f03ee7e37c7b54eda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Task to read the DC motor encoder values Uses Dr. Ridgely's encoder_counter codd </p><dl class="section author"><dt>Author</dt><dd>Ben Bons </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>Nov xx, 2021 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Dec 01, 2021 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a2004a4d2b9e1ac44e03341e653cd5596"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2004a4d2b9e1ac44e03341e653cd5596">&#9670;&nbsp;</a></span>fixDelta()</h2>
@@ -174,7 +177,7 @@ const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>tim5period<
 <p>Task: Read encoder values. </p>
 <p>Period: 10ms, Priority: 2/4 Read the values of the DC motor encoders and put them into thier respecive shares </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_param</td><td>task parameters </td></tr>
+    <tr><td class="paramname">p_params</td><td>task parameters </td></tr>
   </table>
   </dd>
 </dl>

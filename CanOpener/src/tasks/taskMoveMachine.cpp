@@ -4,7 +4,7 @@
  *          Each state in the task is controlled by the limit switches in 
  *          taskLimitSwitches.cpp
  * @author  Hunter Morse
- * @date    Nov xx, 2021
+ * @date    Nov 30, 2021
  */
 
 #include "taskMoveMachine.h"

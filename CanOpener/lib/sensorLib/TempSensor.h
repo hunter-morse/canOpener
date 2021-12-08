@@ -36,7 +36,7 @@ class TempSensor
         /// Temp Value Register address
         const uint8_t temp = 0x05;
 
-        //Manufacturer Value register address
+        /// Manufacturer Value register address
         const uint8_t manu = 0x06;
 
     public:

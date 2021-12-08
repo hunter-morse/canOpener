@@ -17,6 +17,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -90,7 +91,7 @@ $(document).ready(function(){initNavTree('class_motor_driver.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>A class which controls a servo motor.  
+<p>Class which controls a servo motor.  
  <a href="class_motor_driver.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_motor_driver_8h_source.html">MotorDriver.h</a>&gt;</code></p>
@@ -98,7 +99,7 @@ $(document).ready(function(){initNavTree('class_motor_driver.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a865fc184ae132a955f74150c162b7507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_driver.html#a865fc184ae132a955f74150c162b7507">MotorDriver</a> (uint8_t new_id, uint8_t pos, uint8_t neg, uint8_t enable, uint8_t PWM_bound, uint16_t b_delay=0)</td></tr>
-<tr class="memdesc:a865fc184ae132a955f74150c162b7507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_motor_driver.html" title="A class which controls a servo motor.">MotorDriver</a> class.  <a href="class_motor_driver.html#a865fc184ae132a955f74150c162b7507">More...</a><br /></td></tr>
+<tr class="memdesc:a865fc184ae132a955f74150c162b7507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_motor_driver.html" title="Class which controls a servo motor.">MotorDriver</a> class.  <a href="class_motor_driver.html#a865fc184ae132a955f74150c162b7507">More...</a><br /></td></tr>
 <tr class="separator:a865fc184ae132a955f74150c162b7507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dfc6cc86e5ba2587d4baf18efaf4dfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_driver.html#a3dfc6cc86e5ba2587d4baf18efaf4dfd">move</a> (float new_PWM)</td></tr>
 <tr class="memdesc:a3dfc6cc86e5ba2587d4baf18efaf4dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a new PWM value for the motor to be driven at.  <a href="class_motor_driver.html#a3dfc6cc86e5ba2587d4baf18efaf4dfd">More...</a><br /></td></tr>
@@ -120,7 +121,7 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a74fcb8c07e08c7709777c17c8cd09692"><td class="memItemLeft" align="right" valign="top"><a id="a74fcb8c07e08c7709777c17c8cd09692"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_driver.html#a74fcb8c07e08c7709777c17c8cd09692">id</a></td></tr>
-<tr class="memdesc:a74fcb8c07e08c7709777c17c8cd09692"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id of the <a class="el" href="class_motor_driver.html" title="A class which controls a servo motor.">MotorDriver</a> object. <br /></td></tr>
+<tr class="memdesc:a74fcb8c07e08c7709777c17c8cd09692"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id of the <a class="el" href="class_motor_driver.html" title="Class which controls a servo motor.">MotorDriver</a> object. <br /></td></tr>
 <tr class="separator:a74fcb8c07e08c7709777c17c8cd09692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495b49fe4fb144db3191373538d813ca"><td class="memItemLeft" align="right" valign="top"><a id="a495b49fe4fb144db3191373538d813ca"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_driver.html#a495b49fe4fb144db3191373538d813ca">PWM</a></td></tr>
@@ -156,7 +157,7 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="separator:ac471c547adbf8a7f72426ccbaac15b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class which controls a servo motor. </p>
+<div class="textblock"><p>Class which controls a servo motor. </p>
 <p>This class allows for PWM control of a servo motor. The motor must be a simple 2-wire servo motor. The class includes protections against quick reversal of the motor with a (blocking) brake delay. The class will also allow for a maximum PWM to be used. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a865fc184ae132a955f74150c162b7507"></a>
@@ -209,11 +210,11 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
 </div><div class="memdoc">
 
-<p>Constructor for the <a class="el" href="class_motor_driver.html" title="A class which controls a servo motor.">MotorDriver</a> class. </p>
-<p>This constructor sets various parameters for the <a class="el" href="class_motor_driver.html" title="A class which controls a servo motor.">MotorDriver</a> object. These include the pins the motor is connected to, the enable pin, the max/min PWM that can be sent to the motors, the braking delay, and an ID. Note that the braking delay at this point is blocking, so only short delays should be used, if at all. Another note - if the PWM bound is set to a number above 100, the bound will be set to 100.</p>
+<p>Constructor for the <a class="el" href="class_motor_driver.html" title="Class which controls a servo motor.">MotorDriver</a> class. </p>
+<p>This constructor sets various parameters for the <a class="el" href="class_motor_driver.html" title="Class which controls a servo motor.">MotorDriver</a> object. These include the pins the motor is connected to, the enable pin, the max/min PWM that can be sent to the motors, the braking delay, and an ID. Note that the braking delay at this point is blocking, so only short delays should be used, if at all. Another note - if the PWM bound is set to a number above 100, the bound will be set to 100.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">new_id</td><td>The ID of the motor, which has no effect on the function of the <a class="el" href="class_motor_driver.html" title="A class which controls a servo motor.">MotorDriver</a> object </td></tr>
+    <tr><td class="paramname">new_id</td><td>The ID of the motor, which has no effect on the function of the <a class="el" href="class_motor_driver.html" title="Class which controls a servo motor.">MotorDriver</a> object </td></tr>
     <tr><td class="paramname">pos</td><td>The pin name, i.e. PA0 or PC5, of the pin that is connected to the positive terminal of the motor. </td></tr>
     <tr><td class="paramname">neg</td><td>The pin name of the pin that is connected to the negative terminal of the motor </td></tr>
     <tr><td class="paramname">enable</td><td>The pin name of the pin that is connected to the enable pin on the physical motor driver chip </td></tr>
@@ -286,7 +287,7 @@ int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </div><div class="memdoc">
 
 <p>Returns the ID set in the constructor. </p>
-<dl class="section return"><dt>Returns</dt><dd>The ID of the <a class="el" href="class_motor_driver.html" title="A class which controls a servo motor.">MotorDriver</a> object </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The ID of the <a class="el" href="class_motor_driver.html" title="Class which controls a servo motor.">MotorDriver</a> object </dd></dl>
 
 </div>
 </div>

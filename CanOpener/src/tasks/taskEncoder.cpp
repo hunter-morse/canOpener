@@ -3,7 +3,7 @@
  *          Task to read the DC motor encoder values
  *          Uses Dr. Ridgely's encoder_counter codd
  * @author  Ben Bons
- * @date    Nov xx, 2021
+ * @date    Dec 01, 2021
  */
 
 #include <Arduino.h>
@@ -13,8 +13,9 @@
 #include "../shares.h"
 #include "../pins.h"
 #include "taskEncoder.h"
-
+/// The period of Timer 4
 const uint32_t tim4period = 65535;
+/// The period of Timer 5
 const uint32_t tim5period = UINT32_MAX;
 
 /**
@@ -22,7 +23,7 @@ const uint32_t tim5period = UINT32_MAX;
  * @details Period: 10ms, Priority: 2/4
  *          Read the values of the DC motor encoders and put 
  *          them into thier respecive shares
- * @param   p_param: task parameters
+ * @param   p_params task parameters
  * */
 void taskEncoder(void* p_params)
 {
