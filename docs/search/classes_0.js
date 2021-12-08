@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['limitswitch_60',['LimitSwitch',['../class_limit_switch.html',1,'']]]
+  ['limitswitch_82',['LimitSwitch',['../class_limit_switch.html',1,'']]]
 ];

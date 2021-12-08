@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fixdelta_7',['fixDelta',['../task_encoder_8cpp.html#a2004a4d2b9e1ac44e03341e653cd5596',1,'fixDelta(int64_t delta, uint32_t period):&#160;taskEncoder.cpp'],['../task_encoder_8h.html#a2004a4d2b9e1ac44e03341e653cd5596',1,'fixDelta(int64_t delta, uint32_t period):&#160;taskEncoder.cpp']]]
+  ['direction_8',['direction',['../class_motor_driver.html#ac471c547adbf8a7f72426ccbaac15b97',1,'MotorDriver']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inpin_121',['inPin',['../class_limit_switch.html#a8490a0356e3d80d2cc14eb2b36a8623c',1,'LimitSwitch']]]
+  ['brake_5fdelay_141',['brake_delay',['../class_motor_driver.html#a3d3387c529c2d32526f7408ada4d6e03',1,'MotorDriver']]]
 ];

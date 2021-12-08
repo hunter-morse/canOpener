@@ -15,13 +15,19 @@
 #include "tasks/taskWriteToDisplay.h"
 #include "tasks/taskEncoder.h"
 #include "tasks/taskPhotoInterrupt.h"
-
+/// Share that holds the current temperature
 Share<float> currentTemp("Current Temperature");
+/// Share that tells whether a can is in the machine
 Share<bool> canDetected("Can Detected");
+/// Share that tells if the can top limit switch is depressed
 Share<bool> canTopDetected("Can Top Detected");
+/// Share that tells if the can tab has been detected
 Share<bool> canTabDetected("Can Tab Detected");
+/// Share that holds the current encoder 1 value
 Share<int64_t> enc1("Encoder 1");
+/// Share that holds the current encoder 2 value
 Share<int64_t> enc2("Encoder 2");
+/// Share that tells if the kill switch is depressed
 Share<bool> kill("Kill Switch");
 
 void setup(){

@@ -8,6 +8,9 @@
 #ifndef PINS_H
 #define PINS_H
 
+/**
+ * @cond
+ * */
 // DC Motor 1
 #define DC1a    PA8 //TIM1
 #define DC1b    PA9
@@ -53,3 +56,6 @@
 #define IN_REFL PA4
 
 #endif
+/**
+ * @endcond
+ * */

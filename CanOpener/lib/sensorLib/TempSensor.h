@@ -24,19 +24,19 @@
 class TempSensor
 {
     protected:
-        // SCL pin
+        /// SCL pin
         uint8_t scl_pin;
 
-        //SDA Pin
+        /// SDA Pin
         uint8_t sda_pin;
 
-        //I2C address
+        /// I2C address
         uint8_t address;
 
-        //Temp Value address
+        /// Temp Value Register address
         const uint8_t temp = 0x05;
 
-        //Manufacturer Value address
+        //Manufacturer Value register address
         const uint8_t manu = 0x06;
 
     public:

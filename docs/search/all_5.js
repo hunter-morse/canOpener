@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inpin_17',['inPin',['../class_limit_switch.html#a8490a0356e3d80d2cc14eb2b36a8623c',1,'LimitSwitch']]]
+  ['fixdelta_11',['fixDelta',['../task_encoder_8cpp.html#a2004a4d2b9e1ac44e03341e653cd5596',1,'fixDelta(int64_t delta, uint32_t period):&#160;taskEncoder.cpp'],['../task_encoder_8h.html#a2004a4d2b9e1ac44e03341e653cd5596',1,'fixDelta(int64_t delta, uint32_t period):&#160;taskEncoder.cpp']]]
 ];
